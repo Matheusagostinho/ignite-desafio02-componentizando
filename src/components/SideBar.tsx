@@ -8,13 +8,13 @@ interface Genre{
   title: string;
 }
 
-interface GeneresProps{
+interface SideProps{
   genres: Genre[]
   handleClickButton: (id:number)=>void
   selectedGenreId: number
 }
 
-export function SideBar({genres, handleClickButton, selectedGenreId}: GeneresProps) {
+export function SideBar({genres, handleClickButton, selectedGenreId}: SideProps) {
   return(
 
     <nav className="sidebar">
